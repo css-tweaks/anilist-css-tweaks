@@ -1,4 +1,4 @@
-# 🌐anilist-css-tweaks
+# 🌐anilist-css-tweaks v.0.1.7
 A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollbar on profile pages.
 
 ## ⬇️Instalation
