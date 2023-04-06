@@ -1,16 +1,19 @@
 /* ==UserStyle==
 @name         anilist-css-tweaks
 @namespace    https://github.com/Matewoo/anilist-css-tweaks
-@version      0.0.5
+@version      0.1.5
 @description  Small changes for anilist, like removing the scrollbar on profile pages.
 @author       Matewoo
 ==/UserStyle== */
 
 
 @-moz-document domain("anilist.co") {
-
 .about .content-wrap::-webkit-scrollbar {
     display: none
+}
+
+.content-wrap {
+    scrollbar-width: none;
 }
 
 .about .content-wrap[data-v-5c30286e] {
