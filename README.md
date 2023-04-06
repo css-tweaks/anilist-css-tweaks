@@ -2,8 +2,8 @@
 A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollbar on profile pages.
 
 ## ⬇️Instalation
-1. Install Stylus [here](https://github.com/openstyles/stylus).
-2. Get the Theme [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/anilist-tweaks.user.css).
+1. Download and install the "Stylus" browser extension from [here (GitHub)](https://github.com/openstyles/stylus), via the [Web Store (Chromium)](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?) or via the [Add-ons Store (Firefox)](https://addons.mozilla.org/de/firefox/addon/styl-us/)
+2. Then download and install the "anilist-css-tweaks" Theme from [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/anilist-tweaks.user.css).
 3. That's it!
 
 ## ⚠️WIP
