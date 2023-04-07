@@ -9,9 +9,13 @@ A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollb
 ## ⚠️ WIP
 This Theme is currently Work in progress. It will be updated every now and then.
 
+## 🐞 Beta
+This theme includes a beta image which can be installed [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/beta-version/anilist-tweaks-beta.user.css). Please keep in mind that this version could potentially not work as intended. If you have problems with the beta verisons please use the stable releases.
+
 ## 🆕 What's new in v.0.1.8?
 1. Added border radii for various elements.
 
 ## 🌟 Features
 1. Removes the scrollbar on profile pages. (Chromium and Firefox confirmed)
 2. New border radii for screen elements. (Will get lower values in future)
+
