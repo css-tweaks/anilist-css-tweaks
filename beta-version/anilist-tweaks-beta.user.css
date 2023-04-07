@@ -1,0 +1,88 @@
+/* ==UserStyle==
+@name         anilist-css-tweaks-beta
+@namespace    https://github.com/Matewoo/anilist-css-tweaks
+@version      0.1.9-beta
+@description  Small changes for anilist, like removing the scrollbar on profile pages.
+@author       Matewoo
+==/UserStyle== */
+@-moz-document domain("anilist.co") {
+
+    body::-webkit-scrollbar { /*hide "main" scrollbar (Chromium)*/
+        display: none;
+    }
+
+    .about .content-wrap::-webkit-scrollbar { /*hide profile "about" scrollbar (Chromium)*/
+        display: none
+    }
+
+    .content-wrap { /*hide profile "about" scrollbar (Firefox)*/
+        scrollbar-width: none;
+    }
+
+    .about .content-wrap[data-v-5c30286e] { /*border radius "about"*/
+        border-radius: 20px;
+    }
+
+    .desktop .activity-history[data-v-b79eb0f0] { /*border radius "activity history"*/
+        border-radius: 20px;
+    }
+
+    .desktop .genre-overview[data-v-63cd3b41] { /*border radius "genre overview"*/
+        border-radius: 20px;
+    }
+
+    .favourites-wrap[data-v-ddf96a3c] { /*border radius "characters"*/
+        border-radius: 20px;
+    }
+
+    .stats-wrap .list-stats[data-v-815ccddc] { /*border radius "stats"*/
+        border-radius: 20px;
+    }
+
+    .activity-feed-wrap .markdown-editor[data-v-c574a71c] { /*border radius "status editor"*/
+        border-radius: 20px;
+    }
+
+    .activity-edit .el-textarea { /*border radius "status editor"*/
+        border-radius: 20px;
+    }
+
+    .input .el-textarea__inner { /*border radius "status editor"*/
+        border-radius: 20px;
+    }
+
+    .input .el-textarea__inner::-webkit-scrollbar { /*hide "status" scrollbar (Chromium)*/
+        display: none;
+    }
+
+    .el-textarea__inner { /*hide "status" scrollbar (Firefox)*/
+        scrollbar-width: none;
+    }
+
+    .actions .button[data-v-c574a71c] { /*border radius "editor buttons"*/
+        border-radius: 20px;
+    }
+
+    .activity-entry .wrap[data-v-04d66030] { /*border radius "activity entry"*/
+        /*border-radius: 20px;*/
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 30px 30px;
+        border-top-left-radius: 35px 60px;
+    }
+    
+    .list.small .cover[data-v-04d66030]  {
+        border-top-left-radius: 35px 60px;
+        border-top-right-radius: 35px 60px;
+        border-bottom-left-radius: 30px 30px;
+        border-bottom-right-radius: 30px 30px;
+    }
+
+    .scroller .load-more[data-v-6f203cf2] { /*border radius "load more button"*/
+        border-radius: 20px;
+    }
+
+    .overview[data-v-5c30286e] { /*margin between head section and body section*/
+        margin-top: 20px;
+    }
+}
