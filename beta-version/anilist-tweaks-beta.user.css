@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         anilist-css-tweaks-beta
 @namespace    https://github.com/Matewoo/anilist-css-tweaks
-@version      0.1.9-beta
+@version      0.2.0-beta
 @description  Small changes for anilist, like removing the scrollbar on profile pages.
 @author       Matewoo
 ==/UserStyle== */
@@ -64,18 +64,11 @@
     }
 
     .activity-entry .wrap[data-v-04d66030] { /*border radius "activity entry"*/
-        /*border-radius: 20px;*/
-        border-bottom-right-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 30px 30px;
-        border-top-left-radius: 35px 60px;
+        border-radius: 20px;
     }
     
-    .list.small .cover[data-v-04d66030]  {
-        border-top-left-radius: 35px 60px;
-        border-top-right-radius: 35px 60px;
-        border-bottom-left-radius: 30px 30px;
-        border-bottom-right-radius: 30px 30px;
+    .list.small .cover[data-v-04d66030]  { /*border radius "profile-entry-cover"*/
+        border-radius: 20px;
     }
 
     .scroller .load-more[data-v-6f203cf2] { /*border radius "load more button"*/
@@ -84,5 +77,13 @@
 
     .overview[data-v-5c30286e] { /*margin between head section and body section*/
         margin-top: 20px;
+    }
+    
+    .section-header[data-v-eb51fd0e] { /*margin between stats and activity*/
+        margin-top: 10px;
+    }
+    
+    .activity-edit[data-v-c574a71c] { /*margin between status and activity entry*/
+        margin-bottom: 15px;
     }
 }
