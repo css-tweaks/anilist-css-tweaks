@@ -83,10 +83,6 @@
         margin-top: 10px;
     }
     
-    .activity-edit[data-v-c574a71c] { /*margin between status and activity entry*/
-        margin-bottom: 15px;
-    }
-    
     .el-dropdown-menu[data-v-04d66030] {
         background-color:rgba(32,47,69, .8);
         border-style:solid;
