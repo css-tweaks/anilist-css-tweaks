@@ -1,11 +1,33 @@
-/* ==UserStyle==
-@name         anilist-css-tweaks-beta
-@namespace    https://github.com/Matewoo/anilist-css-tweaks
-@version      0.2.1-beta
-@description  Small changes for anilist, like removing the scrollbar on profile pages.
-@author       Matewoo
-==/UserStyle== */
 @-moz-document domain("anilist.co") {
+    
+    /*Color Support for all default colors*/
+    body:has(.user.blue) .el-dropdown-menu__item--divided {
+        --accent-color-profile: 61,180,242;
+    }
+    
+    body:has(.user.purple) .el-dropdown-menu__item--divided {
+        --accent-color-profile: 179,104,230;
+    }
+    
+    body:has(.user.green) .el-dropdown-menu__item--divided {
+        --accent-color-profile: 74,189,78;
+    }
+    
+    body:has(.user.orange) .el-dropdown-menu__item--divided {
+        --accent-color-profile: 218,123,21;
+    }
+    
+    body:has(.user.red) .el-dropdown-menu__item--divided {
+        --accent-color-profile: 218,65,39;
+    }
+    
+    body:has(.user.pink) .el-dropdown-menu__item--divided {
+        --accent-color-profile: 216,120,203;
+    }
+    
+    body:has(.user.gray) .el-dropdown-menu__item--divided {
+        --accent-color-profile: 124,137,154;
+    }
 
     body::-webkit-scrollbar { /*hide "main" scrollbar (Chromium)*/
         display: none;
@@ -104,7 +126,8 @@
     }
     
     .el-dropdown-menu__item--divided[data-v-04d66030]:hover {
-        background-color:rgba(55,73,99, .8);
+        /*background-color:rgba(55,73,99, .8);*/
+        background-color: rgb(var(--accent-color-profile));
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
