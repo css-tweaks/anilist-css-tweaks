@@ -24,3 +24,5 @@ This theme includes a beta image which can be installed [here](https://github.co
 3. Removed more scrollbars. (Main / Status)
 4. Better margins.
 
+## 🐦 Recommendations & Bug Reports
+If you have any suggestions, requests or bugs you can do so via [twitter](https://twitter.com/Matewoo_).
