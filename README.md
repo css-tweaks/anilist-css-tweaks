@@ -5,7 +5,6 @@ A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollb
 1. Download and install the "Stylus" browser extension from [here (GitHub)](https://github.com/openstyles/stylus), via the [Web Store (Chromium)](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?) or via the [Add-ons Store (Firefox)](https://addons.mozilla.org/de/firefox/addon/styl-us/).
 2. Then download and install the "anilist-css-tweaks" Theme from [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/anilist-tweaks.user.css).
 3. That's it!
-4. Please note that a few elements are currently only supported in dark mode. Light mode support will be added soon.
 
 ## ⚠️ WIP
 This Theme is currently Work in progress. It will be updated every now and then.
@@ -19,7 +18,7 @@ This theme includes a beta image which can be installed [here](https://github.co
 3. Removed margin between status and activity entry.
 
 ## 🌟 Features
-1. Removes the scrollbar on profile pages. (Chromium and Firefox confirmed)
+1. Removes the scrollbar on profile pages. (Chromium)
 2. New border radii for screen elements. (Will get lower values in future)
 3. Removed more scrollbars. (Main / Status)
 4. Better margins.
