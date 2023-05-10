@@ -25,4 +25,4 @@ This theme includes a beta image which can be installed [here](https://github.co
 4. Better margins.
 
 ## 🐦 Recommendations & Bug Reports
-If you have any suggestions, requests or bugs you can do so via [twitter](https://twitter.com/Matewoo_).
+If you have any suggestions, requests or bugs you can message me via [twitter](https://twitter.com/Matewoo_) or directly through the issues.
