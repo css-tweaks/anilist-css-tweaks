@@ -1,23 +1,70 @@
 /* ==UserStyle==
 @name         anilist-css-tweaks
 @namespace    https://github.com/Matewoo/anilist-css-tweaks
-@version      0.2.0
+@version      0.2.1
 @description  Small changes for anilist, like removing the scrollbar on profile pages.
 @author       Matewoo
 ==/UserStyle== */
 @-moz-document domain("anilist.co") {
+    
+    /*Color Support for all default colors*/
+    body:has(.user.blue) {
+        --accent-color-profile: 61,180,242;
+    }
+    
+    body:has(.user.purple) {
+        --accent-color-profile: 179,104,230;
+    }
+    
+    body:has(.user.green) {
+        --accent-color-profile: 74,189,78;
+    }
+    
+    body:has(.user.orange) {
+        --accent-color-profile: 218,123,21;
+    }
+    
+    body:has(.user.red) {
+        --accent-color-profile: 218,65,39;
+    }
+    
+    body:has(.user.pink) {
+        --accent-color-profile: 216,120,203;
+    }
+    
+    body:has(.user.gray) {
+        --accent-color-profile: 124,137,154;
+    }
 
+    body {
+        --dropdown-menu-background: 250,250,250, .6;
+        --dropdown-menu-item-hover: 186, 186, 186, .5;
+    }
+    
+    body.site-theme-dark {
+        --dropdown-menu-background: 21,31,46, .6;
+        --dropdown-menu-item-hover: 55,73,99, .5;
+    }
+    
     body::-webkit-scrollbar { /*hide "main" scrollbar (Chromium)*/
         display: none;
     }
 
     .about .content-wrap::-webkit-scrollbar { /*hide profile "about" scrollbar (Chromium)*/
-        display: none
+        display: none;
+    }
+    
+    .markdown::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .markdown img {
+        border-radius: 20px;
     }
 
-    .content-wrap { /*hide profile "about" scrollbar (Firefox)*/
+    /*.content-wrap { hide profile "about" scrollbar (Firefox)
         scrollbar-width: none;
-    }
+    }*/
 
     .about .content-wrap[data-v-5c30286e] { /*border radius "about"*/
         border-radius: 20px;
@@ -55,9 +102,9 @@
         display: none;
     }
 
-    .el-textarea__inner { /*hide "status" scrollbar (Firefox)*/
+    /*.el-textarea__inner { hide "status" scrollbar (Firefox)
         scrollbar-width: none;
-    }
+    }*/
 
     .actions .button[data-v-c574a71c] { /*border radius "editor buttons"*/
         border-radius: 20px;
@@ -82,4 +129,48 @@
     .section-header[data-v-eb51fd0e] { /*margin between stats and activity*/
         margin-top: 10px;
     }
+    
+    .el-dropdown-menu[data-v-04d66030], .el-dropdown-menu[data-v-5776f768] {
+        background-color: rgba(var(--dropdown-menu-background));
+        backdrop-filter:blur(2px);
+        border-style:solid;
+        border-width: 1px;
+        border-radius: 20px;
+        padding: 0;
+        margin:5px;
+    }
+    
+    .el-dropdown-menu__item[data-v-04d66030]:not(.el-dropdown-menu__item--divided), .el-dropdown-menu__item[data-v-5776f768]:not(.el-dropdown-menu__item--divided) {
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    
+    .el-dropdown-menu__item[data-v-04d66030]:hover:not(.el-dropdown-menu__item--divided), .el-dropdown-menu__item[data-v-5776f768]:hover:not(.el-dropdown-menu__item--divided) {
+        background-color:rgba(var(--dropdown-menu-item-hover));
+        border-radius:20px;
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .el-dropdown-menu__item--divided[data-v-04d66030]:hover, .el-dropdown-menu__item--divided[data-v-5776f768]:hover {
+        background-color: rgb(var(--dropdown-menu-item-hover));
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .el-dropdown-menu__item--divided:before {
+        display: none;
+    }
+
+    .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-04d66030], .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-5776f768] {
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-top:0px;
+        border-color: rgb(var(--accent-color-profile));
+    }
+    
+    /*body.site-theme-dark .user.red {
+        background: linear-gradient(#2b1055, #7597de);
+    }*/
+
 }
