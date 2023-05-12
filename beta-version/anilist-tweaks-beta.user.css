@@ -1,3 +1,10 @@
+/* ==UserStyle==
+@name         anilist-css-tweaks-beta
+@namespace    https://github.com/Matewoo/anilist-css-tweaks
+@version      0.2.2-beta
+@description  Small changes for anilist, like removing the scrollbar on profile pages.
+@author       Matewoo
+==/UserStyle== */
 @-moz-document domain("anilist.co") {
     
     /*Color Support for all default colors*/
@@ -123,7 +130,7 @@
         margin-top: 10px;
     }
     
-    .el-dropdown-menu[data-v-04d66030] {
+    .el-dropdown-menu[data-v-04d66030], .el-dropdown-menu[data-v-5776f768] {
         background-color: rgba(var(--dropdown-menu-background));
         backdrop-filter:blur(2px);
         border-style:solid;
@@ -133,18 +140,18 @@
         margin:5px;
     }
     
-    .el-dropdown-menu__item[data-v-04d66030]:not(.el-dropdown-menu__item--divided) {
+    .el-dropdown-menu__item[data-v-04d66030]:not(.el-dropdown-menu__item--divided), .el-dropdown-menu__item[data-v-5776f768]:not(.el-dropdown-menu__item--divided) {
         padding-top:5px;
         padding-bottom:5px;
     }
     
-    .el-dropdown-menu__item[data-v-04d66030]:hover:not(.el-dropdown-menu__item--divided) {
+    .el-dropdown-menu__item[data-v-04d66030]:hover:not(.el-dropdown-menu__item--divided), .el-dropdown-menu__item[data-v-5776f768]:hover:not(.el-dropdown-menu__item--divided) {
         background-color:rgba(var(--dropdown-menu-item-hover));
         border-radius:20px;
         color: rgb(var(--accent-color-profile));
     }
     
-    .el-dropdown-menu__item--divided[data-v-04d66030]:hover {
+    .el-dropdown-menu__item--divided[data-v-04d66030]:hover, .el-dropdown-menu__item--divided[data-v-5776f768]:hover {
         background-color: rgb(var(--dropdown-menu-item-hover));
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -155,15 +162,15 @@
         display: none;
     }
 
-    .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-04d66030] {
+    .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-04d66030], .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-5776f768] {
         padding-top:5px;
         padding-bottom:5px;
         margin-top:0px;
         border-color: rgb(var(--accent-color-profile));
     }
     
-    /*body.site-theme-dark .user.red {
-        background: linear-gradient(#2b1055, #7597de);
-    }*/
+    body.site-theme-dark .user.red {
+        background: linear-gradient(#0B1622, #360505, #0B1622);
+    }
 
 }
