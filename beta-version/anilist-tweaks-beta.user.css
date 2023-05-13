@@ -255,5 +255,35 @@
     .user-page-unscoped.gray .progress .bar { /*matching stats bar color for gray profiles*/
         background: linear-gradient(270deg,#737373,#b3b3b3)
     }
-
+    
+    h2[data-v-0f519cab],
+    h2[data-v-ddf96a3c],
+    h2[data-v-63cd3b41],
+    h2[data-v-b79eb0f0],
+    h2[data-v-eb51fd0e] {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .actions {
+        color: rgb(159,173,189);
+    }
+    
+    .el-dropdown-selfdefine:hover {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .links section a:hover {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .favourites-wrap.anime a,
+    .favourites-wrap.manga a,
+    .favourites-wrap.characters a,
+    .favourites-wrap.staff a {
+        border-radius: 20px;
+    }
+    
+    .wrap .time time {
+        color: rgb(var(--accent-color-profile));
+    }
 }
