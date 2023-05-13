@@ -39,6 +39,9 @@ There is a compatibility issue with Firefix at the moment. The accent colors are
 7. Click "Delete" and than cancel it with the "Cancel" button.
 8. Now everything should work until your reload the Page. You have to repeat step 5-7 every time when you reload the page.
 
+## 📷 Images
+<img src="https://i.imgur.com/kwtkSch.png"/>
+
 ## 🐦 Recommendations & Bug Reports
 If you have any suggestions, requests, bugs or need help you can message me via [twitter](https://twitter.com/Matewoo_) or directly through the issues.
 
