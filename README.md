@@ -35,7 +35,7 @@ There is a compatibility issue with Firefix at the moment. The accent colors are
 3. Now search for "layout.css.has-selector.enabled" in the search box that appeared.
 4. Activate the flag (set it to "true") with a double click.
 5. Now go to your [Anilist](https://anilist.co/) profile page.
-6. Hover over an activity entry and click on the tree dots that appear on the top right.
+6. Hover over an activity entry and click on the three dots that appear on the top right.
 7. Click "Delete" and than cancel it with the "Cancel" button.
 8. Now everything should work until your reload the Page. You have to repeat step 5-7 every time when you reload the page.
 
