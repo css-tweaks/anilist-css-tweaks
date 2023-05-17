@@ -272,6 +272,10 @@
         color: rgb(var(--accent-color-profile));
     }
     
+    h2.section-header[data-v-eb51fd0e] {
+        font-weight: bold;
+    }
+    
     .actions {
         color: rgb(159,173,189);
     }
