@@ -1,4 +1,4 @@
-# 🌐 anilist-css-tweaks v.0.2.1
+# 🌐 anilist-css-tweaks v.0.2.2
 A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollbar on profile pages.
 
 ## ⬇️ Instalation
@@ -13,13 +13,13 @@ This Theme is currently Work in progress. It will be updated every now and then.
 This theme includes a beta image which can be installed [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/beta-version/anilist-tweaks-beta.user.css). Please keep in mind that this version could potentially not work as intended. If you have problems with the beta verisons please use the stable releases.
 
 ## 🆕 What's new in v.0.2.1?
-1. The small dropdown menu for quick actions on covers got a massive design update.
-2. The small status setter dropdown menu got a similar design change as well.
-3. Both menus now have light mode support.
-4. There is now an implementation for accent colors for additional elements on profile pages. They'll change dynamically with your AniList settings.
-5. Color implementation for background colors. They'll change dynamically with your AniList settings. Light mode will be supported.
-6. Firefox scrollbar integration got removed.
-7. Small improvements.
+1. Accent colors now effect much more elements on profile pages.
+2. Your Anilist accent color now sets a gentle background color on profile pages. Light mode is supported.
+3. New footer color for both light themes.
+4. New "activity delete" window.
+5. New design for "Filter" dropdown menu on profile pages.
+6. Last elements updated with new design.
+7. Smaller bug fixes and improvements.
 
 ## 🌟 Features
 1. Removes all scrollbars on Anilist. (Chromium)
