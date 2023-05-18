@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name         anilist-css-tweaks
 @namespace    https://github.com/Matewoo/anilist-css-tweaks
-@version      0.2.1
+@version      0.2.2
 @description  Small changes for anilist, like removing the scrollbar on profile pages.
 @author       Matewoo
 ==/UserStyle== */
 @-moz-document domain("anilist.co") {
     
-    /*Color Support for all default colors*/
+    /*color Support for all default colors*/
     body:has(.user.blue) {
         --accent-color-profile: 61,180,242;
     }
@@ -39,11 +39,29 @@
     body {
         --dropdown-menu-background: 250,250,250, .6;
         --dropdown-menu-item-hover: 186, 186, 186, .5;
+        --menu-border-color: 55,73,99, 1;
+        --footer-color: 232, 232, 232;
+        --footer-text-color: 87, 96, 107;
+        --theme-border-color1: rgb(var(--accent-color-profile));
+
+        --theme-border-color3: 70, 84, 107;
+    }
+    
+    body.site-theme-contrast {
+        --theme-border-color1: 70, 84, 107;
+        --theme-border-color2: 70, 84, 107;
+        --theme-border-color3: rgb(var(--accent-color-profile));
     }
     
     body.site-theme-dark {
         --dropdown-menu-background: 21,31,46, .6;
         --dropdown-menu-item-hover: 55,73,99, .5;
+        --menu-border-color: 255,255,255, 1;
+        --footer-color: 17,22,29;
+        --footer-text-color: 160, 177, 197;
+        --theme-border-color1: 70, 84, 107;
+        --theme-border-color2: rgb(var(--accent-color-profile));
+        --theme-border-color3: 70, 84, 107;
     }
     
     body::-webkit-scrollbar { /*hide "main" scrollbar (Chromium)*/
@@ -54,17 +72,13 @@
         display: none;
     }
     
-    .markdown::-webkit-scrollbar {
+    .markdown::-webkit-scrollbar { /*hide "comments" scrollbar (Chromium)*/
         display: none;
     }
     
-    .markdown img {
+    .activity-entry .markdown img { /*border radius "imgs comments"*/
         border-radius: 20px;
     }
-
-    /*.content-wrap { hide profile "about" scrollbar (Firefox)
-        scrollbar-width: none;
-    }*/
 
     .about .content-wrap[data-v-5c30286e] { /*border radius "about"*/
         border-radius: 20px;
@@ -102,10 +116,6 @@
         display: none;
     }
 
-    /*.el-textarea__inner { hide "status" scrollbar (Firefox)
-        scrollbar-width: none;
-    }*/
-
     .actions .button[data-v-c574a71c] { /*border radius "editor buttons"*/
         border-radius: 20px;
     }
@@ -120,6 +130,7 @@
 
     .scroller .load-more[data-v-6f203cf2] { /*border radius "load more button"*/
         border-radius: 20px;
+        margin-top:30px;
     }
 
     .overview[data-v-5c30286e] { /*margin between head section and body section*/
@@ -130,7 +141,7 @@
         margin-top: 10px;
     }
     
-    .el-dropdown-menu[data-v-04d66030], .el-dropdown-menu[data-v-5776f768] {
+    .el-dropdown-menu[data-v-04d66030], .el-dropdown-menu[data-v-5776f768], .el-dropdown-menu[data-v-eb51fd0e] { /*new dropdown menu*/
         background-color: rgba(var(--dropdown-menu-background));
         backdrop-filter:blur(2px);
         border-style:solid;
@@ -145,13 +156,19 @@
         padding-bottom:5px;
     }
     
-    .el-dropdown-menu__item[data-v-04d66030]:hover:not(.el-dropdown-menu__item--divided), .el-dropdown-menu__item[data-v-5776f768]:hover:not(.el-dropdown-menu__item--divided) {
+    .el-dropdown-menu__item[data-v-eb51fd0e]:not(.el-dropdown-menu__item--divided) {
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    
+    
+    .el-dropdown-menu__item[data-v-04d66030]:hover:not(.el-dropdown-menu__item--divided), .el-dropdown-menu__item[data-v-5776f768]:hover:not(.el-dropdown-menu__item--divided), .el-dropdown-menu__item[data-v-eb51fd0e]:hover:not(.el-dropdown-menu__item--divided) {
         background-color:rgba(var(--dropdown-menu-item-hover));
         border-radius:20px;
         color: rgb(var(--accent-color-profile));
     }
     
-    .el-dropdown-menu__item--divided[data-v-04d66030]:hover, .el-dropdown-menu__item--divided[data-v-5776f768]:hover {
+    .el-dropdown-menu__item--divided[data-v-04d66030]:hover, .el-dropdown-menu__item--divided[data-v-5776f768]:hover, .el-dropdown-menu__item--divided[data-v-eb51fd0e]:hover {
         background-color: rgb(var(--dropdown-menu-item-hover));
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -162,15 +179,189 @@
         display: none;
     }
 
-    .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-04d66030], .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-5776f768] {
+    .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-04d66030], .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-5776f768], .el-dropdown-menu__item.el-dropdown-menu__item--divided[data-v-eb51fd0e] {
         padding-top:5px;
         padding-bottom:5px;
         margin-top:0px;
         border-color: rgb(var(--accent-color-profile));
     }
     
-    /*body.site-theme-dark .user.red {
-        background: linear-gradient(#2b1055, #7597de);
-    }*/
-
+    /*backgroundcolors for all accent colors*/
+    body .user.blue {
+        background: linear-gradient(#EDF1F5, #d8e7f0, #EDF1F5);
+    }
+    
+    body.site-theme-contrast .user.blue {
+        background: #E5EBF1
+    }
+    
+    body.site-theme-dark .user.blue {
+        background: linear-gradient(#0B1622, #0c1d26, #0B1622);
+    }
+    
+    
+    body .user.purple {
+        background: linear-gradient(#EDF1F5, #e5d5f0, #EDF1F5);
+    }
+    
+    body.site-theme-contrast .user.purple {
+        background: #E5EBF1
+    }
+    
+    body.site-theme-dark .user.purple {
+        background: linear-gradient(#0B1622, #180b21, #0B1622);
+    }
+    
+    
+    body .user.green {
+        background: linear-gradient(#EDF1F5, #e1f0e2, #EDF1F5);
+    }
+    
+    body.site-theme-contrast .user.green {
+        background: #E5EBF1
+    }
+    
+    body.site-theme-dark .user.green {
+        background: linear-gradient(#0B1622, #0b210c, #0B1622);
+    }
+    
+    
+    body .user.orange {
+        background: linear-gradient(#EDF1F5, #f2e9df, #EDF1F5);
+    }
+    
+    body.site-theme-contrast .user.orange {
+        background: #E5EBF1
+    }
+    
+    body.site-theme-dark .user.orange {
+        background: linear-gradient(#0B1622, #261a0d, #0B1622);
+    }
+    
+    
+    body .user.red {
+        background: linear-gradient(#EDF1F5, #f0e4e4, #EDF1F5);
+    }
+    
+    body.site-theme-contrast .user.red {
+        background: #E5EBF1
+    }
+    
+    body.site-theme-dark .user.red {
+        background: linear-gradient(#0B1622, #26100d, #0B1622);
+    }
+    
+    
+    body .user.pink {
+        background: linear-gradient(#EDF1F5, #f2e4ed, #EDF1F5);
+    }
+    
+    body.site-theme-contrast .user.pink {
+        background: #E5EBF1
+    }
+    
+    body.site-theme-dark .user.pink {
+        background: linear-gradient(#0B1622, #210b1e, #0B1622);
+    }
+    
+    
+    body .user.gray {
+        background: linear-gradient(#EDF1F5, #dae1eb, #EDF1F5);
+    }
+    
+    body.site-theme-contrast .user.gray {
+        background: #E5EBF1
+    }
+    
+    body.site-theme-dark .user.gray {
+        background: linear-gradient(#0B1622, #16191c, #0B1622);
+    }
+    
+    .user-page-unscoped.gray .progress .bar { /*matching stats bar color for gray profiles*/
+        background: linear-gradient(270deg,#737373,#b3b3b3);
+    }
+    
+    .footer[data-v-0f519cab] {
+        background: rgb(var(--footer-color));
+        color: rgb(var(--footer-text-color));
+    }
+    
+    .el-tooltip.theme-preview {
+        border-radius: 10px;
+    }
+    
+    .dark[data-v-0f519cab] {
+        background: #11161D;
+        color: rgb(160, 177, 197);
+    }
+    
+    .system[data-v-0f519cab] {
+        color: rgb(160, 177, 197);
+    }
+    
+    .name[data-v-63cd3b41] {
+        border-radius: 20px;
+        padding-top:8px;
+    }
+    
+    h2[data-v-0f519cab],
+    h2[data-v-ddf96a3c],
+    h2[data-v-63cd3b41],
+    h2[data-v-b79eb0f0],
+    h2[data-v-eb51fd0e] {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    h2.section-header[data-v-eb51fd0e] {
+        font-weight: bold;
+    }
+    
+    .actions {
+        color: rgb(159,173,189);
+    }
+    
+    .el-dropdown-selfdefine:hover {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .links section a:hover {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .favourites-wrap.anime a,
+    .favourites-wrap.manga a,
+    .favourites-wrap.characters a,
+    .favourites-wrap.staff a {
+        border-radius: 20px;
+    }
+    
+    .wrap .time time {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .el-message-box {
+        border-radius: 20px;
+        background-color: rgba(var(--dropdown-menu-background));
+        backdrop-filter: blur(2px);
+        border-style:solid;
+        border-width: 1px;
+        border-color: rgb(var(--menu-border-color));
+    }
+    
+    .el-message-box .el-message-box__title span {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .el-message-box__close.el-icon-close:hover {
+        color: rgb(var(--accent-color-profile));
+    }
+    
+    .el-message-box__btns button {
+        border-radius: 20px;
+    }
+    
+    .el-button.el-button--default.el-button--small.el-button--primary {
+        background: rgb(var(--accent-color-profile));
+    }
+    
 }
