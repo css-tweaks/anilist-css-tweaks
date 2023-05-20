@@ -369,4 +369,19 @@
         background: rgb(var(--accent-color-profile));
     }
     
+    .tooltip[data-v-366e5d34] {
+        border-radius: 20px;
+        padding-top: 3px;
+    }
+    
+    .title[data-v-366e5d34] {
+        background:transparent;
+        border-radius: 0px;
+        padding: 6px 12px;
+    }
+    
+    .el-tooltip__popper {
+        border-radius: 20px;
+    }
+    
 }
