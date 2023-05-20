@@ -7,7 +7,8 @@ A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollb
 3. That's it!
 
 ## ⚠️ WIP
-This Theme is currently Work in progress. It will be updated every now and then.
+This Theme is currently Work in progress. It will be updated every now and then. <br>
+You can find more informations [here](https://github.com/users/Matewoo/projects/3).
 
 ## 🐞 Beta
 This theme includes a beta image which can be installed [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/beta-version/anilist-tweaks-beta.user.css). Please keep in mind that this version could potentially not work as intended. If you have problems with the beta verisons please use the stable releases.
