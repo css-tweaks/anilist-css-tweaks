@@ -8,7 +8,7 @@
 @-moz-document domain("anilist.co") {
     
     /*color Support for all default colors*/
-    body:has(.user.blue) {
+    body:has(.user.blue), body {
         --accent-color-profile: 61,180,242;
     }
     
@@ -42,15 +42,6 @@
         --menu-border-color: 55,73,99, 1;
         --footer-color: 232, 232, 232;
         --footer-text-color: 87, 96, 107;
-        --theme-border-color1: rgb(var(--accent-color-profile));
-
-        --theme-border-color3: 70, 84, 107;
-    }
-    
-    body.site-theme-contrast {
-        --theme-border-color1: 70, 84, 107;
-        --theme-border-color2: 70, 84, 107;
-        --theme-border-color3: rgb(var(--accent-color-profile));
     }
     
     body.site-theme-dark {
@@ -59,9 +50,6 @@
         --menu-border-color: 255,255,255, 1;
         --footer-color: 17,22,29;
         --footer-text-color: 160, 177, 197;
-        --theme-border-color1: 70, 84, 107;
-        --theme-border-color2: rgb(var(--accent-color-profile));
-        --theme-border-color3: 70, 84, 107;
     }
     
     body::-webkit-scrollbar { /*hide "main" scrollbar (Chromium)*/
