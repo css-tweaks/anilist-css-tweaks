@@ -76,6 +76,22 @@
         display: none;
     }
     
+    .nav-btn[data-v-1cc2919e] {
+        border-radius: 20px;
+        padding-bottom: 7px;
+    }
+    
+    .mod-badge-wrap.follower-badge {
+        border-radius: 20px;
+        padding-top: 9px;
+        margin-bottom: 21px;
+    }
+    
+    .banner-content .avatar {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
     .activity-entry .markdown img { /*border radius "imgs comments"*/
         border-radius: 20px;
     }
