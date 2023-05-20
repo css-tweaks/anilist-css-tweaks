@@ -12,7 +12,7 @@ This Theme is currently Work in progress. It will be updated every now and then.
 ## 🐞 Beta
 This theme includes a beta image which can be installed [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/beta-version/anilist-tweaks-beta.user.css). Please keep in mind that this version could potentially not work as intended. If you have problems with the beta verisons please use the stable releases.
 
-## 🆕 What's new in v.0.2.1?
+## 🆕 What's new in v.0.2.2?
 1. Accent colors now effect much more elements on profile pages.
 2. Your Anilist accent color now sets a gentle background color on profile pages. Light mode is supported.
 3. New footer color for both light themes.
