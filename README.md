@@ -29,16 +29,14 @@ This theme includes a beta image which can be installed [here (userstyles.world)
 4. Better margins.
 5. Better use of accent colors, which change with your Anilist settings. (Currently problems with Firefox)
 
-## 🦊 Firefox color issue
-There is a compatibility issue with Firefix at the moment. The accent colors are not displayed correctly. Normaly you can fix this by opening "about:config" and setting the "layout.css.has-selector.enabled" flag to true, but this feature is broken and won't fix the problem. Firefox is currently working on a solution, so we have to wait. If you still want a soloution that kinda works you can try the following:
+## 🦊 For Firefox users
+The accent colors won't work with your default Browser settings. You can fix this by opening "about:config" and setting the "layout.css.has-selector.enabled" flag to true. Here a step-by-step tutorial:
 1. In your Firefox adress bar search for "about:config".
 2. Accept the disclaimer.
 3. Now search for "layout.css.has-selector.enabled" in the search box that appeared.
 4. Activate the flag (set it to "true") with a double click.
-5. Now go to your [Anilist](https://anilist.co/) profile page.
-6. Hover over an activity entry and click on the three dots that appear on the top right.
-7. Click "Delete" and than cancel it with the "Cancel" button.
-8. Now everything should work until your reload the Page. You have to repeat step 5-7 every time when you reload the page.
+5. Close the "about:config" tab and go to your [Anilist](https://anilist.co/) profile page.
+8. Everything should work properly from now on. If you need help just open an issue.
 
 ## 📷 Images
 <img src="https://i.imgur.com/kwtkSch.png"/>
