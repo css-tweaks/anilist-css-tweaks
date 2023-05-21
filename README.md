@@ -11,7 +11,7 @@ This Theme is currently Work in progress. It will be updated every now and then.
 You can find more informations [here](https://github.com/orgs/css-tweaks/projects/3).
 
 ## 🐞 Beta
-This theme includes a beta image which can be installed [here (userstyles.world)](https://userstyles.world/style/9250/anilist-css-tweaks-beta) or from [here (GitHub)](https://raw.githubusercontent.com/css-tweaks/anilist-css-tweaks/main/beta-version/anilist-tweaks-beta.user.css). Please keep in mind that this version could potentially not work as intended. If you have problems with the beta verisons please use the stable releases.
+This theme includes a beta image which can be installed [here (userstyles.world)](https://userstyles.world/style/9250/anilist-css-tweaks-beta) or from [here (GitHub)](https://raw.githubusercontent.com/css-tweaks/anilist-css-tweaks/main/beta-version/anilist-tweaks-beta.user.css). Install this beta version if you want the latest features in real time.<br>Please keep in mind that this version could potentially not work as intended. If you have problems with the beta verisons please use the stable releases.
 
 ## 🆕 What's new in v.0.2.2?
 1. Accent colors now effect much more elements on profile pages.
