@@ -3,15 +3,15 @@ A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollb
 
 ## ⬇️ Instalation
 1. Download and install the "Stylus" browser extension from [here (GitHub)](https://github.com/openstyles/stylus), via the [Web Store (Chromium)](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?) or via the [Add-ons Store (Firefox)](https://addons.mozilla.org/de/firefox/addon/styl-us/).
-2. Then download and install the "anilist-css-tweaks" Theme from [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/anilist-tweaks.user.css).
+2. Then download and install the "anilist-css-tweaks" Theme from [here (userstyles.world)](https://userstyles.world/style/9234/anilist-css-tweaks) or from [here (GitHub)](https://raw.githubusercontent.com/css-tweaks/anilist-css-tweaks/main/anilist-tweaks.user.css).
 3. That's it!
 
 ## ⚠️ WIP
 This Theme is currently Work in progress. It will be updated every now and then. <br>
-You can find more informations [here](https://github.com/users/Matewoo/projects/3).
+You can find more informations [here](https://github.com/orgs/css-tweaks/projects/3).
 
 ## 🐞 Beta
-This theme includes a beta image which can be installed [here](https://github.com/Matewoo/anilist-css-tweaks/raw/main/beta-version/anilist-tweaks-beta.user.css). Please keep in mind that this version could potentially not work as intended. If you have problems with the beta verisons please use the stable releases.
+This theme includes a beta image which can be installed [here (userstyles.world)](https://userstyles.world/style/9250/anilist-css-tweaks-beta) or from [here (GitHub)](https://raw.githubusercontent.com/css-tweaks/anilist-css-tweaks/main/beta-version/anilist-tweaks-beta.user.css). Please keep in mind that this version could potentially not work as intended. If you have problems with the beta verisons please use the stable releases.
 
 ## 🆕 What's new in v.0.2.2?
 1. Accent colors now effect much more elements on profile pages.
