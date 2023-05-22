@@ -29,7 +29,7 @@ This theme includes a beta image which can be installed [here (userstyles.world)
 4. Better margins.
 5. Better use of accent colors, which change with your Anilist settings. (Currently problems with Firefox)
 
-## 🦊 For Firefox users
+## 🦊 Important for Firefox users!
 The accent colors won't work with your default Browser settings. You can fix this by opening "about:config" and setting the "layout.css.has-selector.enabled" flag to true. Here a step-by-step tutorial:
 1. In your Firefox adress bar search for "about:config".
 2. Accept the disclaimer.
