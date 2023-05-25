@@ -461,4 +461,31 @@
         padding-top: 7px;
     }
     
+    .el-tag.el-tag--info.el-tag--mini {
+        border-radius: 20px;
+        padding-right: 9px;
+    }
+    
+    .el-select .el-tag__close.el-icon-close {
+        background-color: rgb(var(--accent-color-profile));
+    }
+    
+    .medialist.cards .entry-card, .medialist.cards .entry-card .cover, .medialist.cards .entry-card .cover .image, .medialist.cards .entry-card .edit {
+        border-radius: 20px;
+    }
+    
+    .medialist.cards .entry-card .title {
+        border-radius: 0px 0px 19px 19px;
+    }
+    
+    .theme-switch[data-v-0567dd85] {
+        border-radius: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .medialist.table .list-section, .medialist.table .row, .medialist.table .entry .edit, .medialist.table .entry .cover .image, .medialist.table .entry:hover .cover .image, .medialist.table .entry:last-of-type {
+        border-radius: 20px;
+    }
+    
 }
