@@ -1,7 +1,8 @@
 # 🌐 anilist-css-tweaks v.0.2.2
 A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollbar on profile pages.
 
-> This GitHub repository is not affiliated with [Anilist](https://anilist.co/) in any way. We are not an official partner of [Anilist](https://anilist.co/), and we do not have any special relationship with them. The code and documentation in this repository are provided for entertainment purposes only, and should not be construed as an endorsement or recommendation by Anilist.
+> This GitHub repository is not affiliated with [Anilist](https://anilist.co/) in any way. We are not an official partner of [Anilist](https://anilist.co/), and we do not have any special relationship with them. The code and documentation in this repository are provided for entertainment purposes only, and should not be construed as an endorsement or recommendation by [Anilist](https://anilist.co/).<br>
+> The official Anilist website can be found at [anilist.co](https://anilist.co/).
 
 ## ⬇️ Installation
 1. Download and install the "Stylus" browser extension from [here (GitHub)](https://github.com/openstyles/stylus), via the [Web Store (Chromium)](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?) or via the [Add-ons Store (Firefox)](https://addons.mozilla.org/de/firefox/addon/styl-us/).
