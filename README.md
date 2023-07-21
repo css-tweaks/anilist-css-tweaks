@@ -5,7 +5,11 @@ A few small tweaks for [Anilist](https://anilist.co/), like removing the scrollb
 > The official Anilist website can be found at [anilist.co](https://anilist.co/).
 
 <p align="center">
-  <a href="https://github.com/css-tweaks/anilist-css-tweaks/releases/tag/v.0.2.2"><img src="https://img.shields.io/badge/version-0.2.2-brightgreen"></a>
+  <a href="https://github.com/css-tweaks/anilist-css-tweaks/releases/tag/v.0.2.2"><img src="https://img.shields.io/badge/version-0.2.2-brightgreen?style=flat"></a>
+  <a href="https://github.com/css-tweaks/anilist-css-tweaks/issues?q=is%3Aopen+is%3Aissue"><img src="https://img.shields.io/github/issues-raw/css-tweaks/anilist-css-tweaks?style=flat"></a>
+  <a href="https://github.com/css-tweaks/anilist-css-tweaks/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/css-tweaks/anilist-css-tweaks?color=blueviolet"></a>
+  <a href="https://github.com/css-tweaks/anilist-css-tweaks/pulls?q=is%3Aopen+is%3Apr"><img src="https://img.shields.io/github/issues-pr-raw/css-tweaks/anilist-css-tweaks"></a>
+  <a href="https://github.com/css-tweaks/anilist-css-tweaks/releases/tag/v.0.2.2"><img src="https://img.shields.io/badge/beta-old-red?style=flat"></a>
 </p>
 
 ## ⬇️ Installation
