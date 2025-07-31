@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         anilist-css-tweaks-beta
 @namespace    https://github.com/Matewoo/anilist-css-tweaks
-@version      0.2.3-beta
+@version      0.2.4-beta
 @description  Small changes for anilist, like removing the scrollbar on profile pages.
 @author       Matewoo
 ==/UserStyle== */
@@ -487,5 +487,4 @@
     .medialist.table .list-section, .medialist.table .row, .medialist.table .entry .edit, .medialist.table .entry .cover .image, .medialist.table .entry:hover .cover .image, .medialist.table .entry:last-of-type {
         border-radius: 20px;
     }
-    
 }
